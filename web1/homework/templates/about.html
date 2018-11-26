@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aboutme</title>
+</head>
+<body>
+    <h1> Information: </h1>
+    <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/14095696_323338224674213_6932747623980451845_n.jpg?_nc_cat=105&_nc_ht=scontent.fhan2-4.fna&oh=7120653bba132c0b403cf03858bfe2d9&oe=5C758631" alt="">
+    {% for about in aboutmes %}
+        <h3>{{ about["title"] }}</h3>
+        <p>{{ about["aboutme"] }}</p>
+    {% endfor %}
+</body>
+</html>
